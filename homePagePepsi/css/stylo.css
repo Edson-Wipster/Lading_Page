@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    max-width: 1024px;
+    height: 100dvh;
+    font-family: Helvetica, sans-serif;
+    max-width: 1024px;
+    padding-top: 20px;
+    margin: auto;
+    background-color: #0062be;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+header img{
+    width: 50px;
+}
+header nav li a{
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+main{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex: 1;
+}
+main article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 25px;
+    width: 70%;
+}
+main article h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1em;
+}
+main article span{
+    display: block;
+    font-size: 5rem;
+}
+main article p{
+    line-height: 150%;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+main article a{
+    background-color: #fff;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #000;
+    font-size: 1.3rem;
+}
+main section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 25%;
+}
+.img{
+    width: 150px;
+}
+.latasMenores ul{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.latasMenores ul li img:hover{
+    transform: translateY(-5px);
+    transition: 1s ease-in-out linear;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{ 
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+footer ul li a img{
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+}
+footer ul li a img:hover{
+    transform: translateY(-2px);
+    transition: 1s ease-in-out linear;
+}
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    main article{
+        align-items: center;
+        text-align: center;
+    }
+    .latasMenores ul img{
+        margin: 50px 0;
+    }
+    footer ul{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:411px) {
+    .container{
+        gap: 5px;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    main article h1{
+        line-height: 3rem;
+    }
+    main article h1 span{
+        line-height: 4rem;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😻 App Meu Gatinho Fofinho</title>
+    <link rel="stylesheet" href="../CSS/stylo.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário Felino</h1>
+        <nav>
+            <a href="../../index.html" target="_parent">Home</a>
+            <a href="Fotosgatos.html">Fotos de gatos</a>                                
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <article>
+            <h2>Formulario Felino</h2>
+            <p>Responda essa pesquisa nos ajude a entender mais sobre esses bichinhos lindos.</p>
+        </article>
+        <form action="">
+            <fieldset>
+                <legend>Informação sobre o gato</legend>
+                <p>
+                    <label for="nome">Qual é o nome do seu gato?</label>
+                    <input type="text" name="nome" id="nome" placeholder="Garfield" required>
+                </p>
+                <p>
+                    <label for="numeroDeGatos">Quantos gatos você tem?</label>
+                    <input type="number" name="numeroDeGatos" id="" min="1" max="30" value="1" required>                   
+                </p>
+                <p>Seu gato(s) fica em casa ou tem acesso a rua</p>
+
+                <p>
+                    <input type="radio" name="casaRua" id="casa" value="Casa" checked> 
+                    <label for="casa">Fica em Casa</label></p>
+
+                <p>
+                    <input type="radio" name="casaRua" id="rua" value="Rua"> 
+                    <label for="rua">Tem acesso a rua</label>
+                </p>
+
+                <p>Como e a pesonalidade do seu gato?></p>
+
+                <p>
+                    <input type="checkbox" name="personalidade" id="Manhoso" value="Manhoso" checked> 
+                    <label for="manhoso">Manhoso</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="personalidade" id="pregriçoso" value="pregriçoso"> 
+                    <label for="pregriçoso">Pregriçoso</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="personalidade" id="espoleta" value="Espoleta"> 
+                    <label for="espoleta">Espoleta</label>
+                </p>
+
+                <p> 
+                    <input type="checkbox" name="personalidade" id="desconfiado"> 
+                    <label for="desconfiado">Desconfiado</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Seu gato na nossa galeria</legend>
+
+                <p>Anexe uma foto do seu gato poara nossa equipe adicionar a nossa galeria</p>
+
+                <p>
+                    <input type="file" name="fotogato" id="fotoGato"></p>
+                <p>
+                    <label for="legendaFoto">Adicione uma legenda a foto</label>
+                </p>
+                <p>
+                    <textarea name="legendaFoto" id="legendaFoto" cols="30" rows="10" placeholder="Ensira a legenda da sua foto aqui!"></textarea>
+                </p>
+                <button type="submit">Eviar</button>
+                <button type="reset">Redefinir</button>
+                
+            </fieldset>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <a href="#" id="toUp">⬆️</a>
+        <p>&lt; &copy; Copyrigth Edson Wipster &gt;</p>
+    </footer>
+</body>
+</html>
